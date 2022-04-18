@@ -1,0 +1,3 @@
+created text.log file on local system (win11) and then:
+
+docker run -d -v "%cd%/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service

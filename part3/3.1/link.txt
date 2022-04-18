@@ -1,0 +1,3 @@
+https://github.com/jp-public/docker-hy.github.io
+
+expanded on example by adding it to also deploy image to heroku

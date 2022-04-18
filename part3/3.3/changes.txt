@@ -1,0 +1,8 @@
+just adding the following: 
+
+RUN useradd -m appuser
+USER appuser
+
+to both dockerfiles seems to work.
+
+checked user with docker <container> inspect

@@ -1,0 +1,6 @@
+docker run -p 5000:5000 fend
+docker run -p 8080:8080 bend
+
+
+docker build . -t bend
+docker build . -t fend

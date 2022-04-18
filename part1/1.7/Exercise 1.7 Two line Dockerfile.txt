@@ -1,0 +1,2 @@
+docker build . -t two_lines
+docker run two_lines

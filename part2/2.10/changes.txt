@@ -1,0 +1,4 @@
+added ENV REQUEST_ORIGIN=http://localhost to backend Dockerfile
+
+additionally:
+removed useless stuff & cleaned docker compose & added local redis cache

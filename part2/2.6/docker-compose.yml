@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+    fend:
+      build: ./example-frontend
+      ports:
+        - 5000:5000  
+    bend:
+      build: ./example-backend
+      ports:
+        - 8080:8080
+      environment:
+        - REDIS_HOST=redis
+        - POSTGRES_HOST=db
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+        - POSTGRES_DATABASE=postgres
+      depends_on:
+        - db
+        - redis
+    redis:
+      image: redis:latest
+    db:
+      image: postgres:13.2-alpine
+      restart: unless-stopped
+      environment:
+        POSTGRES_PASSWORD: postgres
+      container_name: db_bend
+      volumes:
+        - database:/var/lib/postgresql/data
+
+volumes:
+  database:

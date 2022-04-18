@@ -1,0 +1,6 @@
+version: '3.8'
+
+services:
+    simple-web-service:
+      command: docker run -d -it simple-web-service server
+      image: devopsdockeruh/simple-web-service
