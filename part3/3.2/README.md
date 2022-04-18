@@ -1,6 +1,6 @@
-#Simple script that downloads Docker projects from git, builds and publishes them in your Docker-Hub.
+# Simple script that downloads Docker projects from git, builds and publishes them in your Docker-Hub.
 
-##How to use:
+## How to use:
 
 1. Build image: ```docker build -t <whatever_you_want_to_call_image> .```
 
